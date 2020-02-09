@@ -1,0 +1,77 @@
+.o-article {
+    
+    a {
+        &:not(.o-btn) {
+            color: $c-primary;
+        }
+    }
+    
+    h2 {
+        @extend %lead--2;
+    }
+    
+    h3 {
+        @extend %lead--3;
+    }
+    
+    h4 {
+        @extend %lead--4;
+    }
+    
+    h5 {
+        @extend %lead--5;
+        line-height: 1.6em;
+    }
+    
+    h6 {
+        @extend %lead--6;
+    }
+    
+    p, li {
+        line-height: 1.8em;
+    }
+    
+    sup {
+        color: $c-primary;
+    }
+    
+    ul, ol {
+        padding-left: 40px;
+    }
+    
+    ul, ol {
+        counter-reset: section;
+
+        li {
+            @extend %rel;
+            padding-left: 35px;
+            
+            &:before {
+                @extend %abs;
+                left: 0; top: 0;
+                counter-increment: section;
+                color: $c-primary;
+            }
+        }
+    }
+    
+    ol {
+        li {
+            &:before {
+                content: counter(section, decimal) ". ";
+            }
+        }
+    }
+    
+    ul {
+        li {
+            &:before {
+                content: counter(section, lower-alpha) ") ";
+            }
+        }
+    }
+    
+    &__indent {
+        padding-left: 105px;
+    }
+}

@@ -1,0 +1,28 @@
+.o-btn {
+    @extend %anim;
+    display: inline-flex;
+    @extend %flex-xy;
+    @extend %rel;
+    width: 300px;
+    height: 68px;
+    background-color: $c-primary;
+    white-space: nowrap;
+    font-family: $text;
+    cursor: pointer;
+    font-size: rem(18);
+    color: white; 
+
+    span {
+        width: 100%;
+	}
+}
+
+a.o-btn,
+button.o-btn {
+    .desktop & {
+    
+        &:hover {
+        	background-color: $c-green-02;
+        }
+    }
+}

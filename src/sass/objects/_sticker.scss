@@ -1,0 +1,34 @@
+.o-sticker {
+    @extend %abs;
+    @extend %flex;
+    bottom: 70px;
+    width: 135px; height: 135px;
+    background-color: $c-gray-02;
+    border-radius: 50%;
+    padding-top: 10px;
+    text-align: left;
+    font-weight: $bold;
+    align-items: center;
+
+background: rgba(187,186,186,1);
+background: -moz-linear-gradient(left, rgba(187,186,186,1) 0%, rgba(143,142,142,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(187,186,186,1)), color-stop(100%, rgba(143,142,142,1)));
+background: -webkit-linear-gradient(left, rgba(187,186,186,1) 0%, rgba(143,142,142,1) 100%);
+background: -o-linear-gradient(left, rgba(187,186,186,1) 0%, rgba(143,142,142,1) 100%);
+background: -ms-linear-gradient(left, rgba(187,186,186,1) 0%, rgba(143,142,142,1) 100%);
+background: linear-gradient(to right, rgba(187,186,186,1) 0%, rgba(143,142,142,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbbaba', endColorstr='#8f8e8e', GradientType=1 );
+    
+    .num {
+        margin-left: -20px;
+        line-height: 1em;
+        font-size: 170px;
+        color: $c-primary;
+    }
+    
+    .txt {
+        margin-left: -30px;
+        line-height: .9em;
+        font-size: rem(52);
+    }
+}

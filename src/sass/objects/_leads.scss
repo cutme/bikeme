@@ -1,0 +1,25 @@
+.o-lead {
+    &--1 {
+        font-size: rem(54);
+    }
+    
+    &--2 {
+        font-size: rem(51);
+    }
+    
+    &--3 {
+        font-size: rem(44);
+    }
+    
+    &--4 {
+        @extend %lead--4;
+    }
+    
+    &--5 {
+        font-size: rem(18);
+    }
+    
+    &--6 {
+        font-size: rem(12);
+    }
+}

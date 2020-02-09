@@ -1,0 +1,36 @@
+.o-wrap {
+	width: $base + px;
+	margin: 0 auto;	
+	padding: {
+    	left: 63px;
+    	right: 63px;
+	}
+
+    &:not(.o-wrap--narrow) {
+    	@media ( max-width: $base + px ) {
+    	    width: 100%;
+    	}
+    }
+	
+	@media ( max-width: $tablet + px ) {
+        padding: {
+        	left: 20px;
+        	right: 20px;
+    	}
+    }
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+        padding: {
+        	left: 15px;
+        	right: 15px;
+    	}
+    }
+    
+    &--narrow {
+        width: 1240px;
+        padding: {
+            left: 105px;
+            right: 105px;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@import 'settings/colors.scss';
+@import 'settings/global.scss';
+
+@import 'tools/clear';
+@import 'tools/functions';
+@import 'tools/mixins';
+@import 'tools/flickity';
+//@import 'tools/custom-select';
+//@import 'tools/glide';
+//@import 'tools/glightbox';
+
+@import 'generic/reset';
+@import 'generic/box-sizing';
+@import 'generic/screen-reader';
+
+@import 'elements/extends';
+@import 'elements/fonts';
+@import 'elements/form';
+@import 'elements/media';
+@import 'elements/page';
+@import 'elements/typography';
+
+@import 'objects/article';
+@import 'objects/attributes';
+@import 'objects/btn';
+@import 'objects/cols';
+@import 'objects/further';
+@import 'objects/hamburger';
+@import 'objects/header';
+@import 'objects/icons';
+@import 'objects/leads';
+@import 'objects/logo';
+@import 'objects/price';
+@import 'objects/section';
+@import 'objects/sticker';
+@import 'objects/wrap';
+
+@import 'components/about';
+@import 'components/benefits';
+@import 'components/contact';
+@import 'components/contactform';
+@import 'components/footer';
+@import 'components/hero';
+@import 'components/home';
+@import 'components/instagram';
+@import 'components/nav';
+@import 'components/navfooter';
+@import 'components/order';
+@import 'components/orderform';
+@import 'components/products';
+@import 'components/social';
+@import 'components/steps';
+@import 'components/subsite';
+@import 'components/top';
+
+@import 'trumps/trumps';

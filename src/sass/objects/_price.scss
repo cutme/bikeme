@@ -1,0 +1,42 @@
+.o-price {
+    @extend %abs;
+    @extend %flex;
+    @extend %flex-wrap;
+    @extend %flex-xy;
+    @extend %flex-column;
+    right: 0; bottom: 0;
+    width: 200px; height: 200px;
+    background-color: $c-black-02;
+    transform: translate3d(30%, 20%, 0);
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-weight: $bold;
+    color: white;
+    
+    p {
+        @extend %rel;
+        width: 100%;
+        line-height: 1.05em; 
+        text-align: center;
+    }
+
+    sup {
+        @extend %abs;
+        top: -15px; right: 10px;
+        font-size: rem(46);
+        color: $c-primary;
+    }
+    
+    .currency {
+        font-size: rem(22);
+    }
+    
+    .info {
+        font-size: rem(10);
+    }
+    
+    .price {
+        margin-bottom: -10px;
+        font-size: rem(80);
+    }
+}

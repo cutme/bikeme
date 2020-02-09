@@ -1,0 +1,59 @@
+.c-order {
+    background: {
+        image: url(../img/bg/order.jpg);
+        size: cover;
+        position: center;
+    }
+    
+    &__price {
+        margin-bottom: 25px;
+        
+        .value {
+            line-height: 1em;
+            font: {
+                size: rem(55);
+                weight: $bold;
+            }
+        }
+        
+        sup {
+            vertical-align: super;
+            font-size: rem(32);
+            color: $c-primary;
+        }
+        
+        .currency {
+            font-size: rem(12);
+            color: $c-gray-03;
+        }
+    }
+    
+    .o-article {
+        h5 {
+            &:first-of-type {
+                color: $c-primary;
+            }
+        }
+        
+        &--policy {
+            h6 {
+                margin-bottom: 1.5em;
+                line-height: 1.6em;
+            }
+        }
+    }
+    
+    .o-cols {
+        
+        &__item {
+            &:first-of-type {
+                width: 295px;
+                padding-right: 105px;
+            }
+            
+            &:last-of-type {
+                width: 715px;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.c-footer {
+    background-color: $c-black-01;
+    padding: {
+        top: 50px;
+        bottom: 100px;
+    }
+    
+    &__bottomline {
+        @extend %flex;
+        @extend %flex-spacebetween;
+        padding-top: 100px;
+        
+        p {
+            font-size: rem(10);
+            color: $c-gray-02;
+        }
+    }
+    
+    .o-cols {
+        justify-content: flex-start;
+        
+        &__item {
+            width: 295px;
+            
+            &:last-of-type {
+                margin: 0 0 0 auto;
+            }
+        }
+    }
+    
+    .o-logo {
+        width: 130px; height: 92px;
+    }
+}

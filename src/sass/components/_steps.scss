@@ -1,0 +1,245 @@
+.c-steps {
+    padding: {
+        left: 105px;
+        right: 105px;
+    }
+    
+    figure {
+        @extend %flex;
+    }
+
+    figcaption {
+        @extend %rel;
+        z-index: 5;
+    }
+    
+    &__item {
+        max-width: 820px;
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        }
+        color: white;
+
+        
+        &:last-of-type {
+            //padding-bottom: 0;
+        }
+        
+        .o-lead {
+            &--4 {
+                @extend %rel;
+                max-width: 210px;
+                line-height: 1.1em;
+                text-transform: uppercase;
+                font-weight: $bold;
+                color: $c-primary;
+                
+                &:after {
+                    @extend %abs-pseudo;
+                    top: calc(100% + 15px);
+                    width: 105px; height: 1px;
+                    background-color: white;
+                }
+            }
+        }        
+    }
+    
+    .o-attributes {
+        @extend %abs;
+        transform: translate3d(0, -100%, 0) translate3d(0, -20px, 0);
+
+    }
+    
+    .o-cols {
+        &__item {
+            width: grid(400, 820);
+ 
+            h5 {
+                max-width: 300px;
+                color: $c-primary;
+            }
+            
+            .o-article {   
+                
+                h5 {
+                    margin-bottom: 1.2em;
+                }             
+
+                p {
+                    font-size: rem(12);
+                }
+            }
+        }
+    }
+    
+    .o-lead {        
+        &--4 {
+            margin-bottom: 40px;
+        }
+    }
+
+    .photo {
+        @extend %rel;
+        display: block;
+        width: 190px;
+        margin: 0 0 0 auto;
+        
+        .dust {
+            @extend %abs;
+            @extend %abs-xy;
+            z-index: -2;
+            width: 368px;
+            height: 368px;
+            background-color: $c-black-03;
+            border-radius: 50%;
+            
+            &:after {
+                @extend %abs-pseudo;
+                
+                top: -10px; right: -10px;
+                width: 440px;
+                height: 440px;
+                background: {
+                    image: url(../img/assets/dust.png);
+                    size: cover;
+                    position: center;
+                }
+                border-radius: 50%;
+            }
+        }        
+       
+        img {
+           margin: 0 auto;
+        }
+    }
+    
+    
+    
+
+
+    
+    // Positions 
+
+    .align-center,
+    .align-left {
+        
+        figcaption {
+           text-align: right;
+        }
+        
+        .o-lead {        
+            &--4 {                    
+                &:after {
+                    right: 0;
+                }
+            }
+        }
+        
+        .o-sticker {
+            right: 110px;
+        }
+    }
+
+    .align-center {
+        margin: 0 auto;
+    }
+    
+    .align-left {
+        margin-left: -20px;
+    }
+        
+    .align-right {
+        margin: 0 0 0 auto;
+        
+        figure {
+            flex-direction: row-reverse;
+        }
+        
+        h5 {
+            margin-right: 0;
+            margin-left: auto;
+        }
+        
+        .o-article {
+            text-align: right;
+        }
+        
+        .o-attributes {
+            right: 0;
+        }
+        
+        .o-sticker {
+            left: 130px;
+        }
+        
+        .o-article {
+            text-align: right;
+        }
+
+        .o-cols {
+            flex-direction: row-reverse;
+        }
+    }
+ 
+
+    
+    
+    
+    
+    // Overwrite
+    
+    .step-1, .step-2 {
+        figcaption,
+        .o-article {
+            padding-top: 120px;
+        }
+    }
+    
+    .step-1, .step-5 {
+        .photo {
+            padding-left: 20px;
+        }
+    }
+    
+    .step-3,
+    .step-4,
+    .step-5 {
+        figcaption,
+        .o-article {
+            padding-top: 80px;
+        }        
+    }
+    
+    .step-2,
+    .step-4  {
+        .photo {
+            width: 220px;
+            padding-right: 20px;
+        }
+    }
+    
+    
+    .step-3,
+    .step-4 {
+        .o-sticker {
+            bottom: 0;
+        }
+    }
+    
+    .step-3 {
+        .photo {
+            width: 210px;
+            
+            img {
+                margin: 0 0 0 auto;
+            }
+        }        
+    }
+    
+    .step-5 {
+        .o-sticker {
+            bottom: 30px;
+        }
+    }
+}

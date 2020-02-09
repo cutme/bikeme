@@ -1,0 +1,56 @@
+.c-products {
+    background: {
+        image: url(../img/bg/products.jpg);
+        position: center top;
+        size: cover;
+    }
+    padding: 130px 0 200px 0;
+    
+    &__header {
+        margin-bottom: 40px;
+
+        .o-article {
+            max-width: 540px;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            
+            h2, h4 {
+                font-weight: $medium;
+            }
+            
+            h2 {
+                line-height: 1.1em;
+                font-size: rem(51);
+                color: $c-primary;
+            }
+            
+            h4 {
+              margin-bottom: .2em;  
+            }
+            
+            h5 {
+                margin-bottom: 2em;
+            }
+        }
+    }
+    
+    .splitting .word {
+        opacity: 0;
+    }
+    
+    .startsplit {
+        .word {
+            opacity: 1;
+            animation: slide-in 1s cubic-bezier(.5, 0, .5, 1) both;
+            animation-delay: calc(60ms * var(--word-index));
+        }
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translate3d(0, -50px, 0);
+        opacity: 0;      
+    }
+}

@@ -1,0 +1,31 @@
+.c-contact {
+    background: {
+        image: url(../img/bg/contact.jpg);
+        size: cover;
+        position: center;
+    }
+    margin-bottom: 100px;
+    padding-top: 50px;
+    
+    .o-article {
+        h5 {
+            &:first-of-type {
+                color: $c-primary;
+            }
+        }
+    }
+    
+    .o-cols {
+        
+        &__item {
+            &:first-of-type {
+                width: 295px;
+                padding-right: 105px;
+            }
+            
+            &:last-of-type {
+                width: 715px;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.c-subsite {
+    padding-top: 170px;
+    
+    .o-article {
+        @extend %rel;
+        padding: 50px 0;
+              
+    }
+}

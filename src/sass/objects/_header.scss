@@ -1,0 +1,29 @@
+.o-header {
+    @extend %rel;
+    
+    &--arrow {
+        h2 {
+            @extend %lead--2;
+            margin-bottom: 90px;
+            font-weight: $bold;
+            color: $c-primary;
+        }        
+    }
+    
+    .o-further {
+        @extend %abs;
+        left: -105px; top: 0;
+        
+        a {
+            border-color: white;
+            color: white;
+            
+            &:hover {
+                .desktop & {
+                    transform: translate3d(0, 5px, 0);
+                    //background-color: white;
+                }
+            }
+        }
+    }
+}

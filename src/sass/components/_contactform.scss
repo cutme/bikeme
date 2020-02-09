@@ -1,0 +1,23 @@
+.c-contactform {
+
+    .form-row {
+        
+        &:not(:first-of-type) {
+            max-width: 505px;
+        }
+    }
+    
+    textarea {
+        margin-bottom: 25px;
+    }
+    
+    a {
+        color: $c-primary;
+        
+        &:hover {
+            .desktop & {
+                color: $c-green-02;
+            }
+        }
+    }
+}

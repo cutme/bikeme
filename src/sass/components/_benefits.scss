@@ -1,0 +1,53 @@
+.c-benefits {
+    background: {
+        image: url(../img/bg/benefits.png);
+        repeat: no-repeat;
+        size: center top;
+        color: $c-black-01;
+    }
+    padding: 90px 0 70px 0;
+    
+    &__content {
+        @extend %flex;
+        width: 1125px;
+        margin: 0 auto;
+        color: white;
+
+        li {
+            width: 375px;
+            padding: {
+                left: 40px;
+                right: 40px;
+            }
+        }
+        
+        dt {
+            height: 134px;
+            margin-bottom: 30px;
+
+            [class^="icon-"] {
+                font-size: rem(132);
+                color: $c-primary;
+            }
+        }
+        
+        .o-article {
+            h5 {
+                margin-bottom: 1.5em;
+                color: $c-primary;
+            }
+        }
+        
+        .o-logo {
+            width: 62px;
+            margin-bottom: 30px;
+        }
+        
+        .title {
+            @extend %lead--5;
+            margin-bottom: 30px;
+            font-weight: $bold;
+            color: $c-primary;
+        }
+    }
+}

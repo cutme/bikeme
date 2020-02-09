@@ -1,0 +1,23 @@
+.c-top {
+	 @include z-index(top);
+	 @extend %abs;
+	 left: 0; top: 0;
+	 width: 100%;
+	 height: 170px;
+	 margin-bottom: 20px;
+	 
+	 .o-bapco {
+    	 @extend %abs;
+    	 right: 63px; top: 43px;
+	 }
+	 
+	 .o-logo {
+    	 @extend %flex;
+	 }
+	 
+	 .o-wrap {
+    	 @extend %flex;
+    	 @extend %rel;
+    	 height: 100%;
+	 }
+}

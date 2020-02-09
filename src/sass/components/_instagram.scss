@@ -1,0 +1,20 @@
+.c-instagram {
+    @extend %rel;
+    
+    &:before {
+        @extend %abs-pseudo;
+        @extend %abs-x;
+        top: 0;
+        transform: translateY(-60%);
+        font: {
+            family: $icomoon;
+            size: rem(205);
+        }
+        content: "\e905";
+        color: $c-black-01;
+    }
+
+    .carousel-cell {
+        width: 274px;
+    }
+}

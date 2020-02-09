@@ -1,0 +1,22 @@
+.o-attributes {
+    ul {
+        @extend %flex;
+        
+        li {
+            
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+            
+            [class^="icon-"] {
+                @extend %flex;
+                @extend %flex-xy;
+                width: 27px; height: 27px;
+                background-color: $c-gray-02;
+                border-radius: 50%;
+                font-size: rem(14);
+                color: $c-black-02;
+            }
+        }
+    }
+}

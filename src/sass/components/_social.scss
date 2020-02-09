@@ -1,0 +1,30 @@
+.c-social {
+    @extend %flex;
+
+    ul {
+        @extend %flex;
+        margin: 0 0 0 auto;
+         
+        li {
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+
+            [class^="icon-"] {
+                @extend %flex;
+                @extend %flex-xy;
+                width: 55px; height: 55px;
+                background-color: $c-gray-02;
+                border-radius: 50%;
+                font-size: rem(24);
+                
+                &:hover {
+                    .desktop & {
+                        background-color: $c-primary;
+                    }
+                }
+            }
+            
+        }
+    }
+}

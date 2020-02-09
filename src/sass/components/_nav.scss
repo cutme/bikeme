@@ -1,0 +1,24 @@
+.c-nav {
+    @extend %flex;
+    @extend %flex-y;
+    width: grid(610, $base - 126);
+    height: 100px;
+    margin: 0 0 0 auto;
+    
+    &__menu {
+        @extend %flex;    
+        
+        li {
+            margin-right: 80px;
+        }
+        
+        a {
+            font-size: rem(16);
+            color: $c-gray-01;
+            
+            &:hover {
+                color: $c-primary;
+            }
+        }
+    }
+}
