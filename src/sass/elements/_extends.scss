@@ -113,18 +113,74 @@
 
 %lead--2 {
     font-size: rem(51);
+    
+    @media ( max-width: $tablet + px ) {
+    	font-size: tablet(51);
+    }
+    
+    @media ( max-width: $tablet_portrait + px ) {
+    	font-size: tablet_portrait(51);
+    }
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+    	font-size: smartphone_portrait(51);
+    }
 }
 
 %lead--3 {
     font-size: rem(44);
+    
+    @media ( max-width: $base + px ) {
+    	font-size: base(44);
+    }
+    
+    @media ( max-width: $tablet + px ) {
+    	font-size: tablet(39);
+    }
+    
+    @media ( max-width: $tablet_portrait + px ) {
+    	font-size: tablet_portrait(39);
+    }
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+    	font-size: smartphone_portrait(39);
+    }
 }
 
 %lead--4 {
     font-size: rem(35);
+    
+    @media ( max-width: $tablet + px ) {
+    	font-size: tablet(35);
+    }
+    
+    @media ( max-width: $tablet_portrait + px ) {
+    	font-size: tablet_portrait(35);
+    }
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+    	font-size: smartphone_portrait(35);
+    }
 }
 
 %lead--5 {
     font-size: rem(18);
+    
+    @media ( max-width: $base + px ) {
+    	font-size: base(18);
+    }
+    
+    @media ( max-width: $tablet + px ) {
+    	font-size: tablet(18);
+    }
+    
+    @media ( max-width: $tablet_portrait + px ) {
+    	font-size: tablet_portrait(18);
+    }
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+    	font-size: smartphone_portrait(18);
+    }
 }
 
 %lead--6 {

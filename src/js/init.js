@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded',function() {
         
         
         // Carousels 
+        document.getElementById('benefits') ? window.benefitsCarousel() : false;
         document.getElementById('insta') ? window.instaCarousel() : false;
         
         // Parallax 

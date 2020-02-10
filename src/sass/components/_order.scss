@@ -1,9 +1,11 @@
 .c-order {
+    width: 100%;
     background: {
         image: url(../img/bg/order.jpg);
         size: cover;
         position: center;
     }
+    overflow: hidden;
     
     &__price {
         margin-bottom: 25px;
@@ -45,15 +47,43 @@
     
     .o-cols {
         
+        @media ( min-width: $smartphone_portrait + 1px ) and ( max-width: $tablet_portrait + px ) {
+        	display: flex;
+        	justify-content: space-between;
+        }
+        
         &__item {
             &:first-of-type {
                 width: 295px;
                 padding-right: 105px;
+                
+                @media ( max-width: $base2 + px ) {
+                	padding-right: base2(105);
+                }
+                
+                @media ( max-width: $tablet + px ) {
+                    width: 240px;
+                	padding-right: tablet(60);
+                }
+                
+                @media ( max-width: $tablet_portrait + px ) {
+                	padding-right: tablet(40);
+                }
+
+                @media ( max-width: $smartphone_portrait + px ) {
+                	margin-bottom: 40px;
+                }
             }
             
             &:last-of-type {
-                width: 715px;
+                flex: 1;
             }
+        }
+    }
+    
+    .o-payu {
+        @media ( max-width: $smartphone_portrait + px ) {
+        	width: 115px;
         }
     }
 }

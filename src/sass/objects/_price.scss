@@ -13,6 +13,25 @@
     font-weight: $bold;
     color: white;
     
+    @media ( max-width: $base + px ) {
+    	width: base(200); height: base(200);
+    }
+    
+    @media ( max-width: $tablet + px ) {
+    	width: tablet(200); height: tablet(200);
+    	transform: translate3d(15%, 50%, 0);
+    }
+    
+    @media ( max-width: $tablet_portrait + px ) {
+    	width: tablet_portrait(200); height: tablet_portrait(200);
+    	transform: translate3d(50%, 10%, 0);
+    }
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+    	width: smartphone_portrait(200); height: smartphone_portrait(200);
+    	transform: translate3d(0%, 30%, 0);
+    }
+    
     p {
         @extend %rel;
         width: 100%;
@@ -25,18 +44,86 @@
         top: -15px; right: 10px;
         font-size: rem(46);
         color: $c-primary;
+        
+        @media ( max-width: $base + px ) {
+        	top: base(-15); right: base(10);
+        	font-size: base(46);
+        }
+        
+        @media ( max-width: $tablet + px ) {
+        	top: tablet(-15); right: tablet(10);
+        	font-size: tablet(46);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	top: tablet_portrait(-15); right: tablet_portrait(10);
+        	font-size: tablet_portrait(46);
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	top: smartphone_portrait(-15); right: smartphone_portrait(10);
+        	font-size: smartphone_portrait(46);
+        }
     }
     
     .currency {
         font-size: rem(22);
+        
+        @media ( max-width: $base + px ) {
+        	font-size: base(22);
+        }
+        
+        @media ( max-width: $tablet + px ) {
+        	font-size: tablet(22);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	font-size: tablet_portrait(22);
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	font-size: smartphone_portrait(22);
+        }
     }
     
     .info {
         font-size: rem(10);
+        
+        @media ( max-width: $base + px ) {
+        	font-size: base(10);
+        }
+        
+        @media ( max-width: $base + px ) {
+        	font-size: tablet(10);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	font-size: tablet_portrait(10);
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	font-size: smartphone_portrait(10);
+        }
     }
     
     .price {
         margin-bottom: -10px;
         font-size: rem(80);
+        
+        @media ( max-width: $base + px ) {
+        	font-size: base(80)
+        }
+        
+        @media ( max-width: $tablet + px ) {
+        	font-size: tablet(80);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	font-size: tablet_portrait(80);
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	font-size: smartphone_portrait(80);
+        }
     }
 }

@@ -1,25 +1,55 @@
 .c-hero {
     
     .o-article {
-        padding-right: 85px;
+        padding-right: grid(85, 610);
+        
+        @media ( max-width: $base + px ) {
+//        	padding-right: base(85);
+        }
         
         h3 {
             margin-bottom: 1em;
+            
+            @media ( max-width: $tablet_portrait + px ) {
+            	margin-bottom: .5em;
+            }
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+            	margin-bottom: 0.25em;
+            }
         }
         
         h5 {
             margin-bottom: 3em;
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+            	margin-bottom: 2em;
+            }
         }
     }
     
     .o-cols {
         &__item {
-            width: grid(610, $base - 126);
+            
+            @media ( min-width: $tablet_portrait + 1px ) {
+            	width: grid(610, $base - 126);
+            }
+            
+            &:first-of-type {
+                @media ( max-width: $tablet_portrait + px ) {
+                	margin-bottom: tablet_portrait(50);
+                }
+            }
         }
         
-        figure {
-            @extend %rel;
-            display: inline-block;
+        figure {            
+            @media ( min-width: $tablet_portrait + 1px ) {
+                display: inline-block;
+            }
+            
+            @media ( max-width: $tablet_portrait + px ) {
+            	width: 100%;
+            }
         }
     }
     
@@ -43,12 +73,28 @@
     .o-btn {
         animation: slide-left 1s cubic-bezier(.5, 0, .5, 1) both;
         animation-delay: 1s;
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+            width: 100%;
+            margin-bottom: smartphone_portrait(80);
+        }
     }
     
     .o-further {
         animation: pulse 1s infinite;
         padding: 40px 0;
         
+        @media ( max-width: $base + px ) {
+        	padding: base(40);
+        }
+        
+        @media ( max-width: $tablet + px ) {
+        	padding: base(25);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	padding: 0;
+        }
                 
         a {
             &:hover {
@@ -57,12 +103,45 @@
                     color: white;
                 }
             }
+            
+            @media ( max-width: $tablet_portrait + px ) {
+            	margin: -56px 0 60px auto;
+            }
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+            	display: none;
+            }
         }
     }
     
     .photo {
+        width: 462px;
         animation: fadegray-in 2s cubic-bezier(.5, 0, .5, 1) both;
         animation-delay: 1s;
+        
+        @media ( max-width: $base + px ) {
+        	width: base(462);
+        }
+        
+        @media ( max-width: $tablet + px ) {
+        	width: tablet(370);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	width: tablet_portrait(444);
+            margin: 0 auto;
+        }
+        
+        @media ( min-width: $smartphone_portrait + 1px ) {
+            position: relative;
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+            width: smartphone_portrait(346);
+            margin-bottom: 80px;
+        }
+        
+        
     }    
 }
 

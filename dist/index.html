@@ -11,10 +11,11 @@
     <title>BikeMe</title>
 <link href="css/style.css" rel="stylesheet"></head>
 
+<body>
+
 
 <div id="cover" class="u-cover" style="position: absolute; left: 0; top: 0; z-index: 200; width: 100%; height: 100%; background-color: #1a191c; background-image: url(img/assets/logo-bikeme.svg); background-size: 130px 92px; background-repeat: no-repeat; background-position: center"></div>
     
-<body>
 
     
             <div class="c-top">
@@ -57,14 +58,14 @@
                         <figure>
                             <div class="photo">
                                 <img srcset="./img/products/top.png, ./img/products/top@2x.png 2x" src="./img/products/top.png" alt="">
-                            </div>
                             
-                            <figcaption class="o-price">
-                                <p>Promocja</p>
-                                <p class="price">199<sup>*</sup></p>
-                                <p class="currency">pln</p>
-                                <p class="info">Zestaw</p>
-                            </figcaption>
+                                <div class="o-price">
+                                    <p>Promocja</p>
+                                    <p class="price">199<sup>*</sup></p>
+                                    <p class="currency">pln</p>
+                                    <p class="info">Zestaw</p>
+                                </div>
+                            </div>                            
                         </figure>
                     </div>
                     
@@ -72,7 +73,7 @@
                         <article class="o-article js-split" data-splitting>
                             <h3><strong>
                                 BikeMe <a href="#">by Bapco</a> to 
-                                szybki i prosty sposób 
+                                szybki i&nbsp;prosty sposób 
                                 na czysty rower 
                                 w&nbsp;5&nbsp;krokach.
                             </strong></h3>
@@ -102,11 +103,11 @@
     </div>
     
     
-    <div class="c-benefits" id="benefits">
-        <div class="o-wrap">
+    <div class="c-benefits">
+        <div class="o-wrap o-wrap--narrow">
             
-            <ul class="c-benefits__content">
-                <li class="anim anim--delay1 anim--up">
+            <div class="c-benefits__content main-carousel main-carousel--mobile" id="benefits">
+                <div class="c-benefits__item carousel-cell anim anim--delay1 anim--up">
                     <dl>
                         <dt>
                             <i class="icon-bio"></i>
@@ -124,9 +125,9 @@
                             </article>
                         </dd>
                     </dl>
-                </li>
+                </div>
                 
-                <li class="anim anim--delay2 anim--up">
+                <div class="c-benefits__item carousel-cell anim anim--delay2 anim--up">
                     <dl>
                         <dt>
                             <i class="icon-drops"></i>
@@ -144,9 +145,9 @@
                             </article>
                         </dd>
                     </dl>
-                </li>
+                </div>
                 
-                <li class="anim anim--delay3 anim--up">
+                <div class="c-benefits__item carousel-cell anim anim--delay3 anim--up">
                     <dl>
                         <dt>
                             <i class="icon-arrows"></i>
@@ -164,8 +165,8 @@
                             </article>
                         </dd>
                     </dl>
-                </li>
-            </ul>
+                </div>
+            </div>
             
         </div>
     </div>
@@ -204,12 +205,16 @@
                                 </figcaption>
                                 
                                 <div class="photo">
-                                    <img srcset="./img/products/step-01.png, ./img/products/step-01@2x.png 2x" src="./img/products/step-01.png" alt="">
-                                    <i class="dust"></i>
-                                    <div class="o-sticker">
-                                        <span class="num">1</span>
-                                        <span class="txt">step one</span>
+                                    <div class="product">
+                                        <img srcset="./img/products/step-01.png, ./img/products/step-01@2x.png 2x" src="./img/products/step-01.png" alt="">
+                                        <div class="o-sticker">
+                                            <span class="num">1</span>
+                                            <span class="txt">step one</span>
+                                        </div>
                                     </div>
+                                    
+                                    <i class="dust"></i>
+                                    
                                 </div>
                             </figure>                            
                         </div>
@@ -261,7 +266,10 @@
                                 </figcaption>
                                 
                                 <div class="photo">
-                                    <img srcset="./img/products/step-02.png, ./img/products/step-02@2x.png 2x" src="./img/products/step-02.png" alt="">
+                                    <div class="product">
+                                        <img srcset="./img/products/step-02.png, ./img/products/step-02@2x.png 2x" src="./img/products/step-02.png" alt="">
+                                    </div>
+                                    
                                     <i class="dust"></i>
                                     <div class="o-sticker">
                                         <span class="num">2</span>
@@ -295,9 +303,9 @@
                                     </ul>
                                 </div>
                                 
-                                <h5>Aktywna piana myjąca w&nbsp;aerozolu</h5>
+                                <h5>Aktywna piana myjąca w&nbsp;aerozolu</h5>
                                 
-                                <p>Skoncentrowana, niezwykle wydajna, aktywna piana myjąca przeznaczona do codziennej pielęgnacji roweru. Łatwa w aplikowaniu struktura ułatwia usuwanie nawet najtrudniejszych zabrudzeń. Neutralne PH sprawia, że preparat ten jest bezpieczny dla wszystkich powierzchni. Nie szkodzi komponentom roweru.</p>
+                                <p>Skoncentrowana, niezwykle wydajna, aktywna piana myjąca przeznaczona do codziennej pielęgnacji roweru. Łatwa w aplikowaniu struktura ułatwia usuwanie nawet najtrudniejszych zabrudzeń. Neutralne PH sprawia, że preparat ten jest bezpieczny dla wszystkich powierzchni. Nie szkodzi komponentom roweru.</p>
                             </article>
                         </div>
                     </div>
@@ -315,7 +323,10 @@
                                 </figcaption>
                                 
                                 <div class="photo">
-                                    <img srcset="./img/products/step-03.png, ./img/products/step-03@2x.png 2x" src="./img/products/step-03.png" alt="">
+                                    <div class="product">
+                                        <img srcset="./img/products/step-03.png, ./img/products/step-03@2x.png 2x" src="./img/products/step-03.png" alt="">
+                                    </div>
+
                                     <i class="dust"></i>
                                     <div class="o-sticker">
                                         <span class="num">3</span>
@@ -369,7 +380,10 @@
                                 </figcaption>
                                 
                                 <div class="photo">
-                                    <img srcset="./img/products/step-04.png, ./img/products/step-04@2x.png 2x" src="./img/products/step-04.png" alt="">
+                                    <div class="product">
+                                        <img srcset="./img/products/step-04.png, ./img/products/step-04@2x.png 2x" src="./img/products/step-04.png" alt="">
+                                    </div>
+                                    
                                     <i class="dust"></i>
                                     <div class="o-sticker">
                                         <span class="num">4</span>
@@ -423,7 +437,10 @@
                                 </figcaption>
                                 
                                 <div class="photo">
-                                    <img srcset="./img/products/step-05.png, ./img/products/step-05@2x.png 2x" src="./img/products/step-05.png" alt="">
+                                    <div class="product">
+                                        <img srcset="./img/products/step-05.png, ./img/products/step-05@2x.png 2x" src="./img/products/step-05.png" alt="">
+                                    </div>
+                                    
                                     <i class="dust"></i>
                                     <div class="o-sticker">
                                         <span class="num">5</span>
@@ -459,7 +476,7 @@
                                 
                                 <h5>Smar z PTFE</h5>
                                 
-                                <p>Niezwykle wydajny smar o unikalnej, suchej formule z dodatkiem teflonu (PTFE). Doskonale wypiera wodę. Nie jest toksyczny. Długo utrzymuje się w miejscu zaaplikowania. Nie zbiera brudu. Dba o płynną i cichą pracę napędu roweru. Zapobiega nadmiernemu wyciąganiu łańcucha.</p>
+                                <p>Niezwykle wydajny smar o unikalnej, suchej formule z dodatkiem teflonu (PTFE). Doskonale wypiera wodę. Nie jest toksyczny. Długo utrzymuje się w miejscu zaaplikowania. Nie zbiera brudu. Dba o płynną i cichą pracę napędu roweru. Zapobiega nadmiernemu wyciąganiu łańcucha.</p>
                             </article>
                         </div>
                     </div>
@@ -532,19 +549,19 @@
                             
                             <p>&nbsp;</p>
                             
-                            <h4>Jeżeli tu jesteś to znaczy, że przynajmniej tak samo jak my, lubisz jeździć na rowerze.  Jego czyszczenie to jednak zupełnie inna, czasochłonna i często mniej przyjemna, kwestia, prawda?</h4>
+                            <h4>Jeżeli tu jesteś to znaczy, że przynajmniej tak samo jak my, lubisz jeździć na rowerze.  Jego czyszczenie to jednak zupełnie inna, czasochłonna i&nbsp;często mniej przyjemna, kwestia, prawda?</h4>
                             
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                            
-                            <p>
-                                <img src="img/assets/logo-bapco.svg" alt="bapco" width="117" height="60">
-                            </p>
                         </article>
+                        
+                        <div class="o-bapco">
+                            <img src="img/assets/logo-bapco.svg" alt="bapco" width="117" height="60">
+                        </div>
                     </div>
                     
                     <div class="o-cols__item anim anim--delay5 anim--up">
-                        <article class="o-article">
+                        <div class="o-article">
                             <p>Niezależnie od tego, czy lubisz rekreacyjne przejażdżki, szybkie wyścigi, czy ekstremalne przygody… dobrze jest dbać o sprzęt, by służył jak najdłużej. Szczególnie wtedy, gdy kupiłeś/aś go za sporą sumę, a znalezienie argumentu na ten zakup zajęło Ci co najmniej kilka godzin.</p>
     
                             <p>&nbsp;</p>
@@ -557,8 +574,12 @@
     
                             <p>&nbsp;</p>
                             
-                            <p>Zestaw 5 kroków – tyle potrzeba,<br> by Twój rower pozostał w formie. </p>
-                        </article>
+                            <p>Zestaw 5 kroków – tyle potrzeba,<br> by Twój rower pozostał w formie. </p>
+                        </div>
+                        
+                        <div class="o-bapco">
+                            <img src="img/assets/logo-bapco.svg" alt="bapco" width="117" height="60">
+                        </div>
                     </div>
                 </div>
                 
@@ -587,16 +608,18 @@
                         </div>
                         
                         <article class="o-article o-article--policy">
-                            <h6><sup>*</sup> Cena promocyjna, która obejmuje pierwsze 50 zestawów.</h6>
+                            <h6><sup>*</sup> Cena promocyjna, która obejmuje pierwsze 50 zestawów.</h6>
 
 
-                            <h6>Nasze zestawy dostarcza kurier GLS.
-                            Czas realizacji (2-3 dni robocze).</h6>
+                            <h6>Nasze zestawy dostarcza kurier GLS.
+                            Czas realizacji (2-3 dni robocze).</h6>
                             
                             <p>&nbsp;</p>
-                            
-                            <img src="img/assets/logo-payu.svg" alt="payu" width="115" height="57">
                         </article>
+                        
+                        <div class="o-payu">
+                            <img src="img/assets/logo-payu.svg" alt="payu" width="115" height="57">
+                        </div>
                     </div>
                     
                     <div class="o-cols__item anim anim--delay5 anim--up">
@@ -697,10 +720,8 @@ consectetur adipiscing elit,</span>
             
             <div class="o-cols">
                 <div class="o-cols__item">
-                    <a href="index.html">
-                        <a href="index.html" class="o-logo">
-                            <img src="img/assets/logo-bikeme.svg" alt="bikeme" width="130" height="92">
-                        </a>
+                    <a href="index.html" class="o-logo">
+                        <img src="img/assets/logo-bikeme.svg" alt="bikeme" width="130" height="92">
                     </a>
                 </div>
 

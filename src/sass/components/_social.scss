@@ -1,9 +1,16 @@
 .c-social {
     @extend %flex;
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+        margin-bottom: 30px;
+    }
 
     ul {
         @extend %flex;
-        margin: 0 0 0 auto;
+        
+        @media ( min-width: $tablet_portrait + 1px ) {
+            margin: 0 0 0 auto;        	
+        }
          
         li {
             &:not(:first-child) {

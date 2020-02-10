@@ -5,26 +5,93 @@
         bottom: 100px;
     }
     
+    @media ( max-width: $smartphone_portrait + px ) {
+    	padding-bottom: 60px;
+    }
+    
     &__bottomline {
-        @extend %flex;
         @extend %flex-spacebetween;
-        padding-top: 100px;
+        
+        @media ( min-width: $smartphone_portrait + 1px ) {
+            display: flex;
+	        padding-top: 100px;
+        }
         
         p {
             font-size: rem(10);
             color: $c-gray-02;
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+            	font-size: rem(12);
+            }
         }
     }
     
     .o-cols {
         justify-content: flex-start;
         
+        @media ( max-width: $tablet_portrait + px ) {
+            display: flex;
+        	flex-wrap: wrap;
+        }
+        
         &__item {
-            width: 295px;
+            width: calc(100% / 4);
+            
+            &:not(:last-of-type) {
+                padding-right: 20px;
+                
+                @media ( max-width: $smartphone_portrait + px ) {
+                	padding-right: 0;
+                }
+            }
             
             &:last-of-type {
                 margin: 0 0 0 auto;
             }
+            
+            @media ( min-width: $smartphone_portrait + 1px ) and ( max-width: $tablet_portrait + px ) {
+                &:nth-of-type(1) {
+                    width: grid(300, $tablet_portrait - 80);
+                }
+                
+                &:nth-of-type(2) {
+                    flex: 1;
+                    width: auto;
+                }
+     
+                &:nth-of-type(3) {
+                    width: auto;
+                    flex: 1;
+                    order: 4;
+                    margin: 0;
+                }           
+
+                &:nth-of-type(4) {
+                    //flex: 1;
+                    width: grid(300, $tablet_portrait - 80);
+                    order: 3;
+                }
+            }
+            
+            @media ( max-width: $tablet_portrait + px ) {
+                margin-bottom: 60px;                
+            }
+
+            @media ( max-width: $smartphone_portrait + px ) {
+                
+                width: 100%;
+                flex: 100%;
+            	
+            	
+                
+                &:nth-of-type(4) {
+                    order: 4;
+                    width: 100%;
+                }
+            	
+            }
+            
         }
     }
     

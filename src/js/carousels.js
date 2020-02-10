@@ -3,6 +3,16 @@ const Flickity = require('flickity');
 
 
 document.addEventListener('DOMContentLoaded',function() {
+    
+    window.benefitsCarousel = function() {
+        
+        const benefits = document.getElementById('benefits');
+
+        const benefitsflkty = new Flickity( benefits, {
+            watchCSS: true,
+            pageDots: false
+        });        
+    };
 
     window.instaCarousel = function() {
         
@@ -11,7 +21,8 @@ document.addEventListener('DOMContentLoaded',function() {
         const instaflkty = new Flickity( insta, {
             wrapAround: true,
             freeScroll: true,
-            freeScrollFriction: 0.03,
+            pageDots: false,
+            prevNextButtons: false,
         });
     };
 

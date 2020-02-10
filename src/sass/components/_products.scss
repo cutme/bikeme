@@ -5,6 +5,11 @@
         size: cover;
     }
     padding: 130px 0 200px 0;
+    overflow: hidden;
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+    	padding: 60px 0 160px 0;
+    }
     
     &__header {
         margin-bottom: 40px;
@@ -21,7 +26,7 @@
             
             h2 {
                 line-height: 1.1em;
-                font-size: rem(51);
+                //font-size: rem(51);
                 color: $c-primary;
             }
             

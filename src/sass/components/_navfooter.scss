@@ -1,30 +1,56 @@
 .c-navfooter {
     
+    @media ( max-width: $smartphone_portrait + px ) {
+    	display: flex;
+    }
+    
     h5 {
         margin-bottom: 2.5em;
-        padding-left: 20px;
         text-transform: uppercase;
         font: {
             size: rem(10);
             weight: $bold;
         }
         color: $c-gray-02;
+        
+        @media ( min-width: $smartphone_portrait + 1px ) {
+        	padding-left: 20px;
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+            width: 124px;
+            //width: grid(124, 450);
+        }
     }
     
     ul {
         @extend %flex;
         @extend %flex-wrap;
-        
+        width: grid(450, $smartphone_portrait - 40);
+
         li {
             width: 105px;
             margin-bottom: 10px;
-            padding-left: 20px;
             font-size: rem(12);
+            
+            @media ( max-width: $tablet_portrait + px ) {
+            	width: 50%;
+            }
+            
+            @media ( min-width: $smartphone_portrait + 1px ) {
+            	padding-left: 20px;
+            }
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+            	width: grid(163, 326);
+            }
         }
     }
     
     a {
-        white-space: nowrap;
+        @media ( min-width: $smartphone_portrait + 1px ) {
+            white-space: nowrap;        	
+        }
 
         &:hover {
             .desktop & {

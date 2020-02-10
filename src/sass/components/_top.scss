@@ -7,8 +7,15 @@
 	 margin-bottom: 20px;
 	 
 	 .o-bapco {
-    	 @extend %abs;
-    	 right: 63px; top: 43px;
+        @extend %abs;
+    	 
+        @media ( min-width: $smartphone_portrait + 1px ) {
+            right: 63px; top: 43px;
+        }
+    	 
+        @media ( max-width: $smartphone_portrait + px ) {
+    		left: smartphone_portrait(25); top: 160px;
+        }
 	 }
 	 
 	 .o-logo {

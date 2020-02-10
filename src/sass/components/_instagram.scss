@@ -3,18 +3,45 @@
     
     &:before {
         @extend %abs-pseudo;
-        @extend %abs-x;
+        left: 50%;
         top: 0;
-        transform: translateY(-60%);
+        transform: translate3d(-50%, -60%, 0);
         font: {
             family: $icomoon;
             size: rem(205);
         }
         content: "\e905";
         color: $c-black-01;
+        
+        @media ( max-width: $base + px ) {
+        	font-size: base(205);
+        }
+        
+        @media ( max-width: $tablet + px ) {
+        	font-size: tablet(205);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	font-size: tablet_portrait(205);
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+        	font-size: smartphone_portrait(205);
+        }
     }
 
     .carousel-cell {
         width: 274px;
+        //width: calc(100% / 5);
+        
+        @media ( max-width: $tablet + px ) {
+            width: calc(100% / 4);
+        	//width: 250px;
+        }
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+            width: calc(100% / 2);
+        	//width: 250px;
+        }
     }
 }

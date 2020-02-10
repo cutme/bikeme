@@ -5,23 +5,96 @@
         position: center;
     }
 
-    .o-article {
+    .o-article {       
+
         h4 {
             line-height: 1.6em;
             font-size: rem(26);
             color: $c-primary;
+            
+            @media ( max-width: $base2 + px ) {
+            	font-size: base2(26);
+            }
+        
+            @media ( max-width: $tablet + px ) {
+            	font-size: tablet(26);
+            }
+            
+            @media ( max-width: $tablet_portrait + px ) {
+            	font-size: tablet_portrait(26);
+            }
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+            	font-size: smartphone_portrait(26);
+            }
         }
+        
+        
     }
 
-    .o-cols {
-        
-        
+    
+
+    .o-cols {        
         &__item {
-            width: calc(50% - 10px);
+            position: static;
+
+            @media ( min-width: $tablet_portrait + 1px ) {
+	            width: calc(50% - 10px);
+            }
             
             &:first-of-type {
                 .o-article {
                     padding-right: 85px;
+                    
+                    @media ( max-width: $base2 + px ) {
+                    	padding-right: base2(85);
+                    }
+                    
+                    @media ( max-width: $tablet + px ) {
+                    	padding-right: tablet(60);
+                    }
+                    
+                    @media ( max-width: $tablet_portrait + px ) {
+                    	padding-right: tablet_portrait(40);
+                    }
+                    
+                    @media ( max-width: $smartphone_portrait + px ) {
+                        padding-right: 0;
+                    }
+                }
+                
+                .o-bapco {
+                    
+                    @media ( min-width: $smartphone_portrait + 1px ) and ( max-width: $tablet_portrait + px ) {
+                    	right: 0;
+                    	bottom: 10px;
+                    }
+                    
+                    @media ( max-width: $tablet_portrait + px ) {
+                    	position: absolute;
+                    	bottom: 10px;
+                    }
+                    
+                    @media ( max-width: $smartphone_portrait + px ) {
+                        display: none;
+            
+                    }
+                }
+            }
+            
+            &:last-of-type {
+                .o-article {
+                    @media ( min-width: $smartphone_portrait + 1px ) and ( max-width: $tablet_portrait + px ) {
+                        padding-right: tablet_portrait(240);
+                    }
+                }
+                
+                .o-bapco {
+                    margin-top: 30px;
+                    
+                    @media ( min-width: $smartphone_portrait + 1px ) {
+                        display: none;
+                    }
                 }
             }
         }

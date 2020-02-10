@@ -5,11 +5,23 @@
     height: 100px;
     margin: 0 0 0 auto;
     
+    @media ( max-width: $tablet_portrait + px ) {
+    	display: none;
+    }
+    
     &__menu {
         @extend %flex;    
         
         li {
             margin-right: 80px;
+            
+            @media ( max-width: $base + px ) {
+            	margin-right: base(80);
+            }
+            
+            @media ( max-width: $base + px ) {
+            	margin-right: tablet(36);
+            }
         }
         
         a {

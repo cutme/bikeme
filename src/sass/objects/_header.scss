@@ -7,12 +7,25 @@
             margin-bottom: 90px;
             font-weight: $bold;
             color: $c-primary;
+            
+            @media ( max-width: $base2 + px ) {
+            	margin-bottom: base2(90);
+            }
+
         }        
     }
     
     .o-further {
         @extend %abs;
         left: -105px; top: 0;
+        
+        @media ( max-width: $base2 + px ) {
+        	left: base2(-105);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	display: none;
+        }
         
         a {
             border-color: white;
@@ -21,7 +34,6 @@
             &:hover {
                 .desktop & {
                     transform: translate3d(0, 5px, 0);
-                    //background-color: white;
                 }
             }
         }

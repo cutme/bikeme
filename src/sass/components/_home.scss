@@ -3,7 +3,17 @@
     background: {
         image: url(../img/bg/home.jpg);
         size: cover;
-        position: center;
+        position: center top;
     }
     padding-top: 190px;
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+    	padding-top: 140px;
+    }
+    
+    @extend %flex;
+    @extend %flex-column;
+    @extend %flex-x;
+//    align-items: center;
+//    justify-content: center;
 }

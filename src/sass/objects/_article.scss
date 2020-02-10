@@ -35,43 +35,17 @@
         color: $c-primary;
     }
     
-    ul, ol {
-        padding-left: 40px;
-    }
     
-    ul, ol {
-        counter-reset: section;
-
-        li {
-            @extend %rel;
-            padding-left: 35px;
-            
-            &:before {
-                @extend %abs;
-                left: 0; top: 0;
-                counter-increment: section;
-                color: $c-primary;
-            }
-        }
-    }
-    
-    ol {
-        li {
-            &:before {
-                content: counter(section, decimal) ". ";
-            }
-        }
-    }
-    
-    ul {
-        li {
-            &:before {
-                content: counter(section, lower-alpha) ") ";
-            }
-        }
-    }
     
     &__indent {
         padding-left: 105px;
+        
+        @media ( max-width: $base2 + px ) {
+        	padding-left: base2(105);
+        }
+        
+        @media ( max-width: $tablet_portrait + px ) {
+        	padding: 0;
+        }
     }
 }
